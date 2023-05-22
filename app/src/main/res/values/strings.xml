@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">通用性照護系統</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Login -->
+    <string name="nullAccount">帳號不可爲空！</string>
+    <string name="nullPassword">密碼不可爲空！</string>
+    <string name="wrongAccountAndPassword">帳號或密碼錯誤！</string>
+    <string name="loginSuccess">登入成功！</string>
+    <string name="loginFail">登入失敗！</string>
+
+    <!-- Register -->
+
+</resources>

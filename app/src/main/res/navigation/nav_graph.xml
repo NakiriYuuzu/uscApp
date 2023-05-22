@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/eventFragment">
+    <fragment
+        android:id="@+id/eventFragment"
+        android:name="tw.edu.finalproject.ui.event.EventFragment"
+        android:label="fragment_event"
+        tools:layout="@layout/fragment_event" />
+    <fragment
+        android:id="@+id/deviceFragment"
+        android:name="tw.edu.finalproject.ui.device.DeviceFragment"
+        android:label="fragment_device"
+        tools:layout="@layout/fragment_device" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="tw.edu.finalproject.ui.notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notificationFragment_to_addNotificationFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:destination="@id/addNotificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="tw.edu.finalproject.ui.setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_caregiverFragment"
+            app:destination="@id/caregiverFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpToSaveState="true" />
+        <action
+            android:id="@+id/action_settingFragment_to_userFragment"
+            app:destination="@id/userFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpToSaveState="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/caregiverFragment"
+        android:name="tw.edu.finalproject.ui.setting.care_giver.CaregiverFragment"
+        android:label="fragment_caregiver"
+        tools:layout="@layout/fragment_caregiver" >
+        <action
+            android:id="@+id/action_caregiverFragment_to_settingFragment"
+            app:destination="@id/settingFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="tw.edu.finalproject.ui.setting.user_setting.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userFragment_to_settingFragment"
+            app:destination="@id/settingFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addNotificationFragment"
+        android:name="tw.edu.finalproject.ui.notification.AddNotificationFragment"
+        android:label="fragment_add_notification"
+        tools:layout="@layout/fragment_add_notification" >
+        <action
+            android:id="@+id/action_addNotificationFragment_to_notificationFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+</navigation>

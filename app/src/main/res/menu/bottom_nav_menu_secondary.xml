@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="主頁"
+        android:icon="@drawable/ic_baseline_home_24" />
+<!--    <item-->
+<!--        android:id="@+id/notificationFragment"-->
+<!--        android:title="通知"-->
+<!--        android:icon="@drawable/ic_baseline_notifications_none_24" />-->
+    <item
+        android:id="@+id/settingFragment"
+        android:title="設定"
+        android:icon="@drawable/ic_baseline_settings_24" />
+</menu>

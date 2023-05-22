@@ -1,0 +1,10 @@
+<com.google.android.material.textview.MaterialTextView
+    android:text=""
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    app:layout_constraintCircleRadius="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />
